@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* clearing css */
+    *,html,body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .parallax{
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+    .intro{
+        background-image: url('img/para1.jpg');
+    }
+    .content{
+        background-image: url('img/para2.jpg');
+    }
+    .footer{
+        background-image: url('img/para3.jpg');
+    }
+</style>
+<body>
+    <div class="parallax intro"></div>
+    <div class="parallax content"></div>
+    <div class="parallax footer"></div>
+</body>
+</html>
