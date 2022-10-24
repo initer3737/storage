@@ -12,6 +12,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        scroll-behavior: smooth;
     }
     .parallax{
         background-position: center;
@@ -55,8 +56,20 @@
         background-color: rgba(14, 71, 156, 0.6);
     }
     .text-para{
+        display: flex;
+        flex-wrap: wrap;
         padding: 12px;
         border-radius: 12px;
+    }
+
+    @media only screen and (min-width: 850px) {
+        .text-para{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 12px;
+        border-radius: 12px;
+        width: 25vw;
+    }
     }
 </style>
 <body>
