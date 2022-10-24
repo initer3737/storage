@@ -29,10 +29,60 @@
     .footer{
         background-image: url('img/para3.jpg');
     }
+    .text-light{
+        color: white;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .text-container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 50vw;
+        justify-content: center;
+        align-items: center;
+        margin:0 25vw;
+        font-size: 1.5em;
+    }
+    .bg-brown-trans{
+        background-color: rgba(171, 87, 81, 0.6);
+    }
+    .bg-green-trans{
+        background-color: rgba(24, 39, 13, 0.6);
+    }
+    .bg-blue-trans{
+        background-color: rgba(14, 71, 156, 0.6);
+    }
+    .text-para{
+        padding: 12px;
+        border-radius: 12px;
+    }
 </style>
 <body>
-    <div class="parallax intro"></div>
-    <div class="parallax content"></div>
-    <div class="parallax footer"></div>
+    <div class="parallax intro">
+        <div class="text-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vYcDnSmFpxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <h3 class="text-center text-light bg-brown-trans text-para">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem minus earum.
+           </h3>
+        </div>
+    </div>
+    <div class="parallax content">
+        <div class="text-container">
+            <iframe width="560" height="315" src=" https://youtube.com/embed/krJR0b1Wgrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="text-center text-light bg-green-trans text-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem minus earum.
+            </h3>
+         </div>
+    </div>
+    <div class="parallax footer">
+        <div class="text-container">
+            <iframe width="560" height="315" src="https://youtube.com/embed/nbr5byFBV6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="text-center text-light bg-blue-trans text-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime exercitationem minus earum.
+            </h3>
+         </div>
+    </div>
 </body>
 </html>
