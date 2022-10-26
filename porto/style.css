@@ -396,7 +396,8 @@ footer button{
         margin: 30px 12px;
         border: solid tomato;
         border-radius: 0 25vw  0 ;
-        box-shadow: 23px tomato;
+        background-color: #ddd;
+        box-shadow:4px 8px rgba(206, 71, 47,.9);
     }
 
     nav{
