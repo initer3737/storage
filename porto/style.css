@@ -66,7 +66,7 @@ a{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 70px 0;
+    padding-top: 70px;
     margin-bottom: 12vh;
 }
 
@@ -103,16 +103,45 @@ a{
 }
 
 .parallax{
+    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat:no-repeat ;
     background-size: cover;
-    height: 100vh;
 }
+.parallax-content-blue {
+    position: absolute;
+    display: flex;
+    flex-flow:row nowrap;
+    height: 20vh;
+    justify-content: center;
+    align-items: flex-start;
+    top: 8vh;
+}
+
+.parallax-content-blue .card {
+    padding:16px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:wrap row;
+}
+
+.parallax-content-green .card{
+    display: flex;
+    flex-flow:row nowrap;
+    height: 20vh;
+    justify-content: center;
+    align-items: flex-start;
+    top: 0;
+}
+
 .moe{
+    height: 100vh;
     background-image:url('img/asset/moe1.png') ;
 }
 .owl{
+    height: 240vh;
     background-image:url('img/asset/owl.png') ;
 }
 /* vh vertikal height viewport height #height yang menyesuaikan layar device anda */
@@ -138,6 +167,10 @@ a{
     margin-top: 10px;
 }
 
+.d-none{
+    display: none;
+}
+
 .text-light{
     color: #eaeaea;
 }
@@ -154,7 +187,7 @@ a{
     gap: 2vw;
     margin: 14vh 0;
     padding: 20px 40px;
-    flex-wrap: nowrap;
+    flex-flow:row nowrap;
 }
 
 .card-item{
@@ -224,7 +257,7 @@ a{
 }
 
 footer{
-    padding: 15px 7.5px;
+    padding: 8vh;
     color: #eaeaea;
     background-color: #1A223B;
     font-size: 2em;
@@ -233,10 +266,21 @@ footer{
     font-language-override: normal;
     font-style: oblique;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    gap: 2vh;
 }
 
+footer button{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-self: center;
+}
+
+.icon-cat{
+    margin: 4px 0;
+}
 .icon{
     width: 9vw;
     border: solid #0dcaf0;
@@ -297,20 +341,23 @@ footer{
         background-position: center;
         background-repeat:no-repeat ;
         background-size: cover;
-        height: 170vh;
-        gap: 45vh;
+        height: 90vh;
+        gap: 0;
         display: flex;
         flex-flow: column wrap;
     }
-    .card{
-        height: 5vh;
+    .parallax-content{
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        gap: 120px;
+    }
+    .card{
+        width: 100%;
+        height: 0;
+        display: flex;
+        justify-content: start;
+        flex-flow:wrap column;
         align-items: center;
-        gap: 5vw;
-        /* margin: 14vh 0;
-        padding: 15% 40px; */
+        gap: 4vh;
     }
 
     .list-about{
@@ -325,6 +372,8 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 24px;
+        font-size: medium;
+        margin-bottom: 10vh;
     }
 
     .intro-image-border{
@@ -341,9 +390,53 @@ footer{
         font-size: 16px;
     }
 
-    .jikoshokai{
-        font-size: smaller;
-        margin-top: 12px;
+    .jikoshokai {
+        display: flex;
+        gap: 0;
+        margin: 30px 12px;
+        border: solid tomato;
+        border-radius: 0 25vw  0 ;
+        box-shadow: 23px tomato;
     }
 
+    nav{
+        position: sticky;
+        bottom: 0;
+        background-color: #1A223B;
+    }
+
+    .owl{
+        height: 165vh;
+    }
+    .parallax-content-blue .card{
+        gap: 2vh;
+    }
+
+
+    .parallax-content-green .card{
+        justify-content: center;
+        align-items: center;
+        flex-flow:column nowrap;
+        gap:3vh;
+    }
+
+    header .icon-container{
+        margin-top: 2vh;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        background-color: #1A223B;
+        width: 100%;
+        z-index: 9;
+        padding: 4;
+    }
+    
+  }
+
+  @media only screen and (max-width: 700px) {
+    .owl{
+        height: 210vh;
+    }
   }
