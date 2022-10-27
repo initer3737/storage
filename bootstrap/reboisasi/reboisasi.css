@@ -64,3 +64,20 @@ header .card{
 video{
     opacity: 0.8;
 }
+
+@media only screen and (max-width: 1000px) {
+    header{
+        height: 190vh;
+    }
+
+    nav ul{
+        position: fixed;
+        bottom: 0;
+        z-index: 12;
+        background-color: rgba(24, 243, 24, 0.4);
+        width: 100%;
+        padding: 12px ;
+    }
+
+    nav ul a{color: black;}
+}
