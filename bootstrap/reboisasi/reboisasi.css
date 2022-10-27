@@ -1,0 +1,66 @@
+/* color palete */
+.color-kuning{color: #F0FF42; }
+.color-green1{color: #82CD47; }
+.color-green2{color: #54B435; }
+.color-green3{color: #379237; }
+        /* bg */
+.bg-kuning{background-color: #F0FF42; }
+.bg-green1{background-color: #82CD47; }
+.bg-green2{background-color: #54B435; }
+.bg-green3{background-color: #379237; }
+
+/* color palete */
+body{
+    height: 200vh;
+}
+
+nav{
+    background-color: rgba(41, 243, 75, 0.863);
+    padding: 1vh 23px 2vh 1vh;
+    display: flex;
+}
+
+nav button{
+    margin-right: auto;
+}
+
+nav li a{
+    text-decoration: none;
+    color: green;
+    font-size: large;
+}
+
+nav li a:horizontal{
+    transition: ease-in .2s;
+    color: green;
+}
+
+header{
+    background-attachment: fixed;
+    background-image: url('../assets/pohonsvg.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+header .card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2vw;
+    margin: 12px;
+}
+
+header .card{
+    min-width: 220px;
+    max-width: 320px;
+    padding: 12px 20px;
+}
+
+.kenapa-reboisasi p{
+    padding: 0 12px;
+}
+
+video{
+    opacity: 0.8;
+}
