@@ -1,0 +1,78 @@
+
+.card{
+    min-width: 230px;
+    max-width: 530px;
+    padding: 12px 10px;
+    background-color:rgba(12, 112, 223, 0.6);
+    box-shadow: 8px 10px rgba(12, 112, 223, 0.7);
+}
+
+nav{
+    background-color:rgba(12, 112, 223, 0.6);
+    box-shadow: 8px 10px rgba(12, 112, 223, 0.7);
+    bottom: 50vh;
+}
+
+nav li a{
+    color: rgb(219, 203, 233);
+    text-decoration: none;
+    padding: 0 6px;
+}
+
+nav .li-link{
+    padding: 0 12px;
+}
+
+nav li a:hover{
+    color: #eaeaea;
+    transition: ease-in .5s;
+}
+
+li .card-title{
+    padding: 6px 0;
+}
+
+header video{
+    height: inherit;
+    object-fit: cover;
+    width: fit-content;
+}
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    object-position: 12px;
+}
+
+main{
+    display: flex;
+    gap: 12px;
+    flex-flow:nowrap row;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    flex-flow:column nowrap;
+}
+.menu-utama{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    height: 100vh;
+}
+
+@media screen and (max-width: 888px) {
+    .menu-utama{
+        width: 100%;
+        margin: 12px 320px;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+  }
