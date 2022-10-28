@@ -178,9 +178,10 @@
   </div>
     <!-- modal-end -->
     <script>
+        let play=true;
       const music = new Audio("../assets/itachi.mp3");
       music.loop = true;
-      music.play();
+      (play ? music.play() : music.pause());
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

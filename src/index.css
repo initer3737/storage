@@ -1,5 +1,6 @@
 *{
-    overflow: hidden;
+    /* overflow-y: hidden; */
+    height: fit-content;
 }
 .card{
     min-width: 230px;
