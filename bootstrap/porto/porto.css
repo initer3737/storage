@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    cursor: url(https://cur.cursors-4u.net/anime/ani-11/ani1035.ani), url(https://cur.cursors-4u.net/anime/ani-11/ani1035.png), auto !important;
 }
 :root{
     --info-color:#0dcaf0;
@@ -19,15 +20,9 @@ nav a,nav .nav-link{
 nav a,nav .nav-link:focus{
     color: var(--silver) ;
 }
-nav li{
-    display: flex;
-    flex-direction: column;
-}
 nav,nav ul .dropdown-menu{
     background-color: black;
-    color:white;
 }
-
 body{
     max-height: 200vh;
     min-height: 200vh;
@@ -36,6 +31,15 @@ nav video{
     position: relative;
     height:fit-content;
 }
+.navbar-icon{
+    transition: ease-in .3s;
+    color: var(--info-color);
+}
+.navbar-icon:hover{
+    transition: ease-in .3s;
+    color: red;
+
+}
 .card-red{
     width:fit-content;
     height: fit-content;
@@ -43,9 +47,16 @@ nav video{
     box-shadow: 12px 12px 11px 10px rgba(182, 13, 13, 0.6);
 }
 .itachi-text{
+   
+}
+.itachi-container{
     position: absolute;
     top:18vh;
     margin: auto 10vw;
+    display: flex;
+    align-self: center;
+    flex-flow: column nowrap;
+    gap: 1vh;
 }
 .p-absolute{
     position: absolute;
@@ -59,4 +70,18 @@ header{
 
 .itachi{
     height:max-content;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
 }

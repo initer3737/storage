@@ -21,8 +21,12 @@
                 <i class="bi bi-camera-video"></i>
                 Marathon_Yuk
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            onmouseenter="playSelect('../')"
+            onclick="playActive('../')"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="bi bi-bullseye navbar-icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -45,28 +49,6 @@
                 music
                 <i class="bi bi-diamond-fill"></i>
                 </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" 
-                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                    onmouseenter="playSelect('../')"
-                    onclick="playActive('../')"
-                >
-                <i class="bi bi-info-circle"></i>
-                  information
-                </a>
-                <ul class="dropdown-menu">
-                  <li><hr class="dropdown-divider"></li>
-                  <li>
-                    <a class="p-2" href="https://initer3737.github.io/" target="_blank"
-                    onmouseenter="playSelect('../')"
-                    onclick="playActive('../')"
-                    >
-                        <i class="bi bi-question-diamond text-info"></i>
-                        about me
-                    </a>
-                </li>
-                </ul>
               </li>
             </ul>
           </div>
