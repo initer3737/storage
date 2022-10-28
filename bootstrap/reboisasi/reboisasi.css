@@ -39,7 +39,8 @@ header{
     background-attachment: fixed;
     background-image: url('../assets/pohonsvg.png');
     background-size: cover;
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 30px;
 }
 
 header .card-container{
@@ -67,9 +68,12 @@ video{
 
 @media only screen and (max-width: 1000px) {
     header{
-        height: 190vh;
+        height: fit-content;
+        flex-flow: wrap column;
     }
-
+header .card-container{
+    flex-flow: wrap ;
+}
     nav ul{
         position: fixed;
         bottom: 0;

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+:root{
+    --info-color:#0dcaf0;
+    --silver:red;
+}
+
+nav .nav-link:hover{
+    color: aliceblue;
+}
+nav a,nav .nav-link{
+    color: var(--info-color) ;
+}
+nav a,nav .nav-link:focus{
+    color: var(--silver) ;
+}
+nav li{
+    display: flex;
+    flex-direction: column;
+}
+nav,nav ul .dropdown-menu{
+    background-color: black;
+    color:white;
+}
+
+body{
+    max-height: 200vh;
+    min-height: 200vh;
+}
+nav video{
+    position: relative;
+    height:fit-content;
+}
+.card-red{
+    width:fit-content;
+    height: fit-content;
+    background: rgba(255,0,0, .7);
+    box-shadow: 12px 12px 11px 10px rgba(182, 13, 13, 0.6);
+}
+.itachi-text{
+    position: absolute;
+    top:18vh;
+    margin: auto 10vw;
+}
+.p-absolute{
+    position: absolute;
+}
+
+header{
+    width: 100vw;
+    height: max-content;
+    position: relative;
+}
+
+.itachi{
+    height:max-content;
+}

@@ -1,4 +1,6 @@
-
+*{
+    overflow: hidden;
+}
 .card{
     min-width: 230px;
     max-width: 530px;
