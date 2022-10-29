@@ -24,8 +24,8 @@ nav,nav ul .dropdown-menu{
     background-color: black;
 }
 body{
-    max-height: 200vh;
-    min-height: 200vh;
+    /* max-height: 200vh;
+    min-height: 200vh; */
 }
 nav video{
     position: relative;
@@ -61,7 +61,6 @@ nav video{
 .p-absolute{
     position: absolute;
 }
-
 header{
     width: 100vw;
     height: max-content;
@@ -74,16 +73,16 @@ header{
 
 footer{
     display: flex;
-    align-items: center;
+    /* margin-top: 100px; */
+    align-items: flex-end;
     justify-content: center;
 }
 
 .parallax{
-    /* position: relative; */
     background-attachment: fixed;
     background-position: center;
     background-repeat:no-repeat ;
     background-size: cover;
     background-image: url('img/itachi2.png');
-    height: 70vh;
+    height: 100vh;
 }
