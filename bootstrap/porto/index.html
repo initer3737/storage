@@ -108,27 +108,10 @@
     <header>
     <div class="row">
         <video src="../assets/itachi.mp4" loop autoplay class="itachi col-12"></video>
-          <div class="itachi-container">
-            <div class="card-red text-light rounded itachi-text px-3 py-2" id="mugen"
-                onclick="document.getElementById('itachi').click()"
-            >
-                <p class="h5">
-                    <i class="bi bi-fire text-dark"></i>
-                    amaterasu!!
-                </p>
-            </div>
-            <div class="card-red text-light rounded itachi-text px-3 py-2 d-none d-md-block" id="mugen">
-                <a class="dropdown-item text-light" href="https://initer3737.github.io/" target="_blank"
-                    onmouseenter="playSelect()" onclick="playActive()">
-                    <i class="bi bi-question-diamond-fill text-light"></i>
-                    about me
-                </a>
-            </div>
-          </div> 
     </div>
     </header>
     <main>
-        <div class="parallax">
+        <div class="parallax me-no-itachi">
 
           <div class="d-flex justify-content-center my-3">
             <button class="btn btn-danger py-2 px-3 rounded-pill"
@@ -138,6 +121,24 @@
               serious issue!!
             </button>
           </div>
+
+          <div class="itachi-container">
+            <div class="card-red text-light rounded-pill itachi-text px-3 py-2" id="mugen"
+                onclick="document.getElementById('itachi').click()"
+            >
+                <p class="h5">
+                    <i class="bi bi-fire text-dark"></i>
+                    amaterasu!!
+                </p>
+            </div>
+            <div class="card-red text-light rounded-pill itachi-text px-3 py-2 d-none d-md-block" id="mugen">
+                <a class="dropdown-item text-light" href="https://initer3737.github.io/" target="_blank"
+                    onmouseenter="playSelect()" onclick="playActive()">
+                    <i class="bi bi-question-diamond-fill text-light"></i>
+                    about me
+                </a>
+            </div>
+          </div> 
 
         </div>
     </main>
@@ -226,6 +227,7 @@
     <script>
         let play=true;
       const music = new Audio("../assets/itachi.mp3");
+      music.volume=0.4
       music.loop = true;
       music.play()
     </script>

@@ -50,13 +50,12 @@ nav video{
    
 }
 .itachi-container{
-    position: absolute;
-    top:18vh;
-    margin: auto 10vw;
     display: flex;
-    align-self: center;
-    flex-flow: column nowrap;
-    gap: 1vh;
+    gap: 3vw;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 .p-absolute{
     position: absolute;
@@ -83,6 +82,13 @@ footer{
     background-position: center;
     background-repeat:no-repeat ;
     background-size: cover;
-    background-image: url('img/itachi2.png');
     height: 100vh;
+}
+
+.me-no-itachi{
+    background-image: url('img/itachi2.png');
+}
+.itachi-ga-kure{
+    background-image: url('img/itachi.png');
+    background-position: center;
 }
