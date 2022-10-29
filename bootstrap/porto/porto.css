@@ -79,9 +79,11 @@ footer{
 }
 
 .parallax{
-    position: relative;
+    /* position: relative; */
     background-attachment: fixed;
     background-position: center;
     background-repeat:no-repeat ;
     background-size: cover;
+    background-image: url('img/itachi2.png');
+    height: 70vh;
 }
