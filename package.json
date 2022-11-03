@@ -1,0 +1,21 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind":"npx tailwindcss -i ./style_tailwind/conf.css -o ./style_tailwind/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initer3737/storage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/initer3737/storage/issues"
+  },
+  "homepage": "https://github.com/initer3737/storage#readme"
+}

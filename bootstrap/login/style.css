@@ -26,3 +26,9 @@ video{
     background-color:rgb(63, 13, 117) ;
     color: rgb(188, 138, 241);
 }
+
+.card a:hover{
+    background-color:rgb(63, 13, 117) ;
+    color: rgba(246, 243, 250, 1);
+    transition: ease-in-out .5s;
+}
