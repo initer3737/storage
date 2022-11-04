@@ -1,12 +1,19 @@
+:root{
+    --btn-hover:#8de7ff;
+    --bg-1:rgb(63, 13, 117);
+    --bg-2:rgba(60, 37, 84,.5);
+    --card-color:rgb(188, 138, 241);
+}
+
 video{
     min-width: 100vw;
     min-height: 100vh;
 }
 
 .wrapper-card{
-    position: fixed;
-    top: 30%;
-    bottom: 50%;
+    position: absolute;
+    top: 10vh;
+    bottom: 50vh;
     left: 6vw;
 }
 
@@ -15,20 +22,25 @@ video{
     max-width: 320px;
     padding: 3vh 2vw;
     border-radius: 2vw;
-    box-shadow:4px 6px rgb(63, 13, 117);
-    background-color: rgba(60, 37, 84,.5);
+    box-shadow:4px 6px var(--bg-1);
+    background-color:var(--bg-2) ;
     color: #9aecfd;
     display: flex;
     flex-flow: nowrap column;
 }
 
 .card a{
-    background-color:rgb(63, 13, 117) ;
-    color: rgb(188, 138, 241);
+    background-color:var(--bg-1) ;
+    color:var(--card-color) ;
 }
 
 .card a:hover{
-    background-color:rgb(63, 13, 117) ;
-    color: rgba(246, 243, 250, 1);
+    color: var(--btn-hover);
     transition: ease-in-out .5s;
+    border:1px solid var(--btn-hover);
+}
+
+.card label{
+    margin-left: 8px;
+    font-family: sans-serif;
 }

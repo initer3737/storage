@@ -14,7 +14,7 @@
     <audio src="../assets/sci-fi-cyberpunk-trailer-110587.mp3" autoplay loop class="hidden"></audio>
                 <!-- form -->
     <div class="flex justify-end mr-32">
-        <div class="fixed inset-y-1/2 ">
+        <div class="absolute inset-y-1/2 ">
             <div class="flex flex-col gap-2 px-3 py-4 border border-purple-800 rounded-md shadow-lg bg-violet-900/50 shadow-purple-900 border-3">
                 <h5 class="text-lg font-bold text-center text-white">login</h5>
                 <div class="flex flex-col gap-2">
@@ -25,7 +25,9 @@
                     <label for="password" class="text-purple-50">password</label>
                     <input type="password" id="password" placeholder="password" class="w-full border-gray-300 rounded-sm focus:border-purple-900">
                 </div>
-                <a href="https://www.instagram.com/mr.vaank/" target="_blank" class="px-5 py-2 text-center text-purple-100 transition-all bg-purple-500 rounded-md shadow-md hover:bg-purple-700 hover:text-indigo-50 shadow-purple-900">
+                <a href="https://www.instagram.com/mr.vaank/" target="_blank" class="px-5 py-2 text-center text-purple-100 bg-purple-500 rounded-md shadow-md hover:bg-purple-700 hover:text-rose-200 shadow-purple-900 hover:border-rose-300 hover:border-2"
+                    onmouseenter="new Audio('../../vanila/porto/sound/select.mp3').play()"
+                >
                     login
                 </a>
             </div>
