@@ -1,0 +1,30 @@
+
+.blue__theme{
+    background-color: #0A2647;
+}
+.body__theme{
+    /* background-color: #000; */
+    /* background-color: #62B6B7; */
+}
+
+.bg__image{
+    background:no-repeat url('../img/night.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.card__container{
+ position: absolute;
+ bottom: 5px;
+ right: 10px;
+ backdrop-filter: bl;
+}
+
+.card__container__notification{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    backdrop-filter: bl;
+}
