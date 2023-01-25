@@ -26,3 +26,19 @@
 
 
 // localStorage.setItem('player','yotsusan')
+
+// window.addEventListener("beforeinstallprompt", (e) => {
+//   // log the platforms provided as options in an install prompt
+//   console.log(e.platforms); // e.g., ["web", "android", "windows"]
+//   e.userChoice.then((choiceResult) => {
+//     console.log(choiceResult.outcome); // either "accepted" or "dismissed"
+//   }, handleError);
+// });
+
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('./sw.js')
+    .then((e)=>{
+        console.log('worker is registered :',e)
+    })
+    .catch(e=>console.log('eror is here comrade guest :',e))
+}
