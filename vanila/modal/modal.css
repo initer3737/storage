@@ -1,0 +1,61 @@
+html,*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.modal-header{
+    position: relative;
+    height: 50px;
+}
+.d-none{display: none;}
+.modal-togled{
+    position: relative;
+    width: 60cqw;
+    left: 20cqw;
+    transform: translateY(25cqh);
+    background-color: rgba(48, 109, 221,.4);
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    box-shadow: 12px 12px 12px blue;
+    transition: ease-out 2s;
+}
+
+.modal-filter{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(194, 214, 235, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: -999;
+}
+.btn-modal{
+    position: absolute;
+    background-color: transparent;
+    top:0;
+    left: 90cqw;
+    padding: 10px 5px;
+    border-radius: 7px;
+    box-shadow: 6px 6px 9px blue;
+    cursor: pointer;
+    font-size: 21px;
+    font-family: Georgia, 'Times New Roman', Times, serif,sans-serif;
+}
+.btn-close-modal{
+    position: absolute;
+    background-color: transparent;
+    top:0;
+    right: 0;
+    padding: 10px 19px;
+    border-radius: 7px;
+    box-shadow: 6px 6px 9px blue;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif,sans-serif;
+}
+
+
+.modal::backdrop {
+    background-color: rgba(133, 156, 180, 0.6);
+  }
