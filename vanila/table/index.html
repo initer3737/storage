@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .table-video{
+            width:100vw ;
+            height: 100vh;
+            position: absolute;
+            inset: 0;
+            object-fit: cover;
+            object-position: center;
+
+        }
+        table{
+            width: 100vw;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            background-color: rgba(255, 0, 0,.4);
+            font-size: 21px;
+            border-color: rgba(255, 0, 0,.5);
+            box-shadow:1px 13px 12px red;
+        }
+        .selected{
+            background-color: rgba(187, 35, 35,.5);
+            border: 1px solid red;
+            box-shadow:1px 10px 12px red;
+        }
+    </style>
+</head>
+<body>
+    <video src="video/Lake - 91562.mp4" loop autoplay  class="table-video"></video>
+    <table cellpadding="12" cellspacing="1" border="12">
+        <thead>
+            <th colspan="1">no</th>
+            <th >name</th>
+            <th >in_service</th>
+        </thead>
+        <tbody>
+            <tr class="selected">
+                <td>1</td>
+                <td>yotsusan_machi</td>
+                <td>LDV</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vika</td>
+                <td>LDV</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Elina</td>
+                <td>LDV</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>alexia de la conte</td>
+                <td>LDV</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>minova peko-peko</td>
+                <td>LDV</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>sugiono de la forest</td>
+                <td>LDV</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
