@@ -42,7 +42,7 @@
             display: flex;
             gap:12px;
             justify-content: center;
-            /* overflow: hidden; */
+            overflow: hidden;
         }
         .geblek-containers{
             transform: translateY(23px) rotate(7deg);
@@ -50,13 +50,14 @@
             /* position: relative; */
             cursor:default;
         }
-        body{
+        #body{
             /* background-color: rgba(55, 105, 214,.5) */
             overflow: hidden;
             background-color: rgba(55, 105, 214,.5);
-            /* mix-blend-mode: luminosity; */
+            --blending:luminosity;
+            mix-blend-mode: var(--blending);
             /* mix-blend-mode:difference; */
-            mix-blend-mode:soft-light;
+            /* mix-blend-mode:soft-light; */
         }
         .hiasan-container{
             display: flex;
@@ -82,13 +83,40 @@
             height: 100vh;
             position: absolute;
             inset: 0;
-            /* z-index: -1; */
+            z-index: -1;
         }
         .d-none{display: none;}
+        #jam{
+            font-size: 3rem;
+            position: absolute;
+            padding: 9px 11px;
+            background-color: rgba(135, 206, 235,.7);
+            box-shadow: 9px 5px 12px blue;
+            color: white;
+            width: fit-content;
+            z-index: 2;
+            top:0;
+            animation: jam-kelip 2s alternate-reverse infinite;
+        }
+        @keyframes jam-kelip {
+            from{}
+            to{
+                box-shadow: 12px 12px 12px white;
+            }
+        }
     </style>
-     <script defer src="script.js"></script>
+     <script  src="script.js"></script>
+     <script>
+        setInterval(jam,1000)
+
+        function jam(){
+            let jam=new Date()
+            getIdElement('jam').innerHTML=jam.toLocaleTimeString()
+        }
+     </script>
 </head>
-<body>
+<body id="body">
+    <div id="jam"></div>
     <video src="weejio/wanita.mp4" autoplay loop class="weejio-bg"></video>
     <audio src="weejio/drama-stringsmp3.mp3" class="d-none" autoplay loop></audio>
     <div class="geblek-containers">
@@ -105,58 +133,58 @@
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-suit-diamond"></i>
+                <i class="bi bi-suit-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-gem"></i>
+                <i class="bi bi-gem"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-x-diamond-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-diamond-half"></i>
+                <i class="bi bi-diamond-half"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-fan"></i>
+                <i class="bi bi-fan"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-flower1"></i>
+                <i class="bi bi-flower1"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-flower2"></i>
+                <i class="bi bi-flower2"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-flower3"></i>
+                <i class="bi bi-flower3"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
                 <i class="bi bi-x-diamond"></i>
+                <i class="bi bi-x-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-octagon"></i>
+                <i class="bi bi-octagon-fill"></i>
             </div>
             <!-- <div class="geblek" id="geblek" tes="blin">8</div> -->
             <!-- <button id="icon">aha</button> -->
@@ -165,67 +193,67 @@
             <div class="geblek">8</div>
             <div class="hiasan-container">
                 <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-moon-stars-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-suit-diamond"></i>
+                <i class="bi bi-suit-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-gem"></i>
+                <i class="bi bi-gem"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond-half"></i>
+                <i class="bi bi-diamond-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-fan"></i>
+                <i class="bi bi-fan"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower1"></i>
+                <i class="bi bi-flower1"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower2"></i>
+                <i class="bi bi-flower2"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower3"></i>
+                <i class="bi bi-flower3"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-x-diamond"></i>
+                <i class="bi bi-x-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-octagon"></i>
+                <i class="bi bi-octagon-fill"></i>
             </div>
             <!-- <div class="geblek" id="geblek" tes="blin">8</div> -->
             <!-- <button id="icon">aha</button> -->
@@ -234,67 +262,67 @@
             <div class="geblek">8</div>
             <div class="hiasan-container">
                 <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-moon-stars-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-suit-diamond"></i>
+                <i class="bi bi-suit-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-gem"></i>
+                <i class="bi bi-gem"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond-half"></i>
+                <i class="bi bi-diamond-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-fan"></i>
+                <i class="bi bi-fan"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower1"></i>
+                <i class="bi bi-flower1"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower2"></i>
+                <i class="bi bi-flower2"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower3"></i>
+                <i class="bi bi-flower3"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-x-diamond"></i>
+                <i class="bi bi-x-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-octagon"></i>
+                <i class="bi bi-octagon-fill"></i>
             </div>
             <!-- <div class="geblek" id="geblek" tes="blin">8</div> -->
             <!-- <button id="icon">aha</button> -->
@@ -303,87 +331,67 @@
             <div class="geblek">8</div>
             <div class="hiasan-container">
                 <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-moon-stars-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-suit-diamond"></i>
+                <i class="bi bi-suit-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-gem"></i>
+                <i class="bi bi-gem"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond-half"></i>
+                <i class="bi bi-diamond-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-fan"></i>
+                <i class="bi bi-fan"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower1"></i>
+                <i class="bi bi-flower1"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower2"></i>
+                <i class="bi bi-flower2"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower3"></i>
+                <i class="bi bi-flower3"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-x-diamond"></i>
+                <i class="bi bi-x-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
-            </div>
-            <div class="geblek">8</div>
-            <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-octagon"></i>
+                <i class="bi bi-octagon-fill"></i>
             </div>
             <!-- <div class="geblek" id="geblek" tes="blin">8</div> -->
             <!-- <button id="icon">aha</button> -->
@@ -392,71 +400,142 @@
             <div class="geblek">8</div>
             <div class="hiasan-container">
                 <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-moon-stars-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-suit-diamond"></i>
+                <i class="bi bi-suit-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-gem"></i>
+                <i class="bi bi-gem"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-diamond-half"></i>
+                <i class="bi bi-diamond-half"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-fan"></i>
+                <i class="bi bi-fan"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower1"></i>
+                <i class="bi bi-flower1"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower2"></i>
+                <i class="bi bi-flower2"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-flower3"></i>
+                <i class="bi bi-flower3"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-x-diamond"></i>
+                <i class="bi bi-x-diamond-fill"></i>
             </div>
             <div class="geblek">8</div>
             <div class="hiasan-container">
-                <i class="bi bi-moon-stars"></i>
-                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-octagon"></i>
+                <i class="bi bi-octagon-fill"></i>
             </div>
             <!-- <div class="geblek" id="geblek" tes="blin">8</div> -->
             <!-- <button id="icon">aha</button> -->
         </div>
+        <div class="geblek-container">
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-moon-stars"></i>
+                <i class="bi bi-moon-stars-fill"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond-fill"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-suit-diamond"></i>
+                <i class="bi bi-suit-diamond-fill"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-gem"></i>
+                <i class="bi bi-gem"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-diamond-half"></i>
+                <i class="bi bi-diamond-half"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-fan"></i>
+                <i class="bi bi-fan"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-flower1"></i>
+                <i class="bi bi-flower1"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-flower2"></i>
+                <i class="bi bi-flower2"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-flower3"></i>
+                <i class="bi bi-flower3"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-x-diamond"></i>
+                <i class="bi bi-x-diamond-fill"></i>
+            </div>
+            <div class="geblek">8</div>
+            <div class="hiasan-container">
+                <i class="bi bi-octagon"></i>
+                <i class="bi bi-octagon-fill"></i>
+            </div>
+            <!-- <div class="geblek" id="geblek" tes="blin">8</div> -->
+            <!-- <button id="icon">aha</button> -->
+        </div>
+       
+
     </div>
    
 </body>
