@@ -8,13 +8,83 @@
     max-width: 530px;
     padding: 12px 10px;
     background-color:rgba(12, 112, 223, 0.6);
-    box-shadow: 8px 10px rgba(12, 112, 223, 0.7);
+    box-shadow:14px 12px 12px rgba(12, 112, 223, 0.7);
+    animation: kelip 4s alternate infinite;
 }
+.hiasan i{
+    /* box-shadow: 12px 12px 12px white; */
+    text-shadow: 1px 9px 6px white;
+    animation: kelip-hiasan 1s alternate-reverse infinite;
+    color: skyblue !important;
+}
+@keyframes kelip-hiasan {
+    from{
 
+    }
+    to{
+        text-shadow: 1px 9px 6px skyblue;
+    }
+}
 nav{
     background-color:rgba(12, 112, 223, 0.6);
-    box-shadow: 8px 10px rgba(12, 112, 223, 0.7);
+    box-shadow: 14px 12px 12px rgba(12, 112, 223, 0.7);
     bottom: 50vh;
+    animation: kelip 906ms alternate infinite;
+    animation-delay: 2s;
+    position: relative;
+    transform: translateY(70%);
+    overflow: hidden;
+}
+.hiasan-border{
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border:2px solid white;
+} 
+.hiasan-border::after,
+.hiasan-border::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border:2px solid skyblue;
+} 
+.hiasan-border::after{
+    transform: translateX(13px) translateY(18px);
+}
+.hiasan-border::before{
+    transform: translateX(23px) translateY(15px);
+}
+.border-atas-kiri{
+    top: 0;
+    left: 0;
+    transform: rotate(60deg) translateX(-25px) ;
+}
+.border-atas-kanan{
+    top: 0;
+    right: 0;
+    transform: rotate(30deg) translateX(55px) ;
+}
+.border-bawah-kiri{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg) translateX(65px) translateY(-75px) ;
+}
+.border-bawah-kanan{
+   position: relative;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg) translateX(-165px) translateY(-25px) ;
+}
+@keyframes kelip {
+    from{
+
+    }
+    to{
+        box-shadow: 14px 12px 12px rgba(255, 255, 255, 0.7);
+    }
 }
 
 nav li a{
