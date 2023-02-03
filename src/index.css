@@ -13,8 +13,8 @@
 }
 .hiasan i{
     /* box-shadow: 12px 12px 12px white; */
-    text-shadow: 1px 9px 6px white;
-    animation: kelip-hiasan 1s alternate-reverse infinite;
+    text-shadow: 1px 9px 3px transparent;
+    animation: kelip-hiasan 2s alternate-reverse infinite;
     color: skyblue !important;
 }
 @keyframes kelip-hiasan {
@@ -34,6 +34,7 @@ nav{
     position: relative;
     transform: translateY(70%);
     overflow: hidden;
+    max-height: fit-content;
 }
 .hiasan-border{
     position: absolute;
@@ -70,13 +71,13 @@ nav{
     position: relative;
     bottom: 0;
     left: 0;
-    transform: rotate(180deg) translateX(65px) translateY(-75px) ;
+    transform: rotate(180deg) translateX(65px) translateY(-15px) ;
 }
 .border-bawah-kanan{
    position: relative;
     bottom: 0;
     right: 0;
-    transform: rotate(180deg) translateX(-165px) translateY(-25px) ;
+    transform: rotate(180deg) translateX(-165px) translateY(-15px) ;
 }
 @keyframes kelip {
     from{
@@ -123,6 +124,7 @@ main{
     display: flex;
     gap: 12px;
     flex-flow:nowrap row;
+    transform: translateX(-83px);
 }
 
 body{
@@ -133,20 +135,28 @@ body{
 }
 .menu-utama{
     position: absolute;
-    display: flex;
+    width: 70%;
+    /* row-gap: 65%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,2fr));
+    place-items: center;
     justify-content: center;
-    align-items: center;
-    left: 0;
+    align-items: center; 
+    top: 0;
+    left: -8vw;
     height: 100vh;
 }
 
 @media screen and (max-width: 888px) {
     .menu-utama{
-        width: 100%;
-        margin: 12px 320px;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        flex-direction: column;
+        row-gap: 65%;
+        top: 40%;
+        left: 50px;
+    } 
+    main{
+        transform: translateX(0);
     }
+    /* nav{
+        margin-bottom: 90px;
+    } */
   }
