@@ -16,5 +16,5 @@ document.addEventListener('mousemove',(e)=>{
     let bg=document.getElementById('weejio-begeh')
         bg.style.height=100+e.pageY/20+'vh'
         bg.style.width=100+e.pageX/40+'vw'
-        bg.style.transform=`scale(${1+e.pageY/402})`
+        bg.style.transform=`scaleY(${1+e.pageY/1202}) scaleX(${1+e.pageX/1502})`
 })
