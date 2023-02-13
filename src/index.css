@@ -163,4 +163,5 @@ body{
     height: 200vh;
     object-fit: cover;
     object-position: center;
+    transition: ease-out .7s;
 }
