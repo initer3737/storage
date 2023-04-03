@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sliders</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .weejio-begeh{
+            width: 100%;
+            height: 100vh;
+            inset: 0;
+            position: absolute;
+            object-position: center;
+            object-fit: cover;
+        }
+        .toggles-container{
+            display: flex;
+            gap: 5px;
+            position: absolute;
+            bottom: 25%;
+            left: 25%;
+            /* flex-basis: 121px; */
+            /* flex-shrink: 2px; */
+        }
+        .toggles-container button{
+            width: 200px;
+        }
+        .toggles-container img{
+            width: 125px;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: 0 0 12px 2px white;
+            transition: all 2s;
+            animation: togglers infinite 2s alternate;
+        }
+        .toggles-container img:hover{
+            transform: translate(12px,12px) scale(2);
+            object-fit: cover;
+            object-position: center;
+            box-shadow: 0 0 12px 2px gold;
+            transition: all 1s;
+            animation: togglers infinite 1s alternate-reverse
+        }
+        @keyframes togglers {
+            from{}
+            to{
+                box-shadow: 0 0 12px 2px dodgerblue;
+            }    
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <video src="../../src/assets/anime.mp4" autoplay loop muted id="weejio" class="weejio-begeh"></video>
+    <!-- <video src="../../tailwind/assets/desa.mp4" autoplay loop muted id="weejio2"></video>
+    <video src="../../tailwind/assets/dragon.mp4" autoplay loop muted id="weejio3"></video> -->
+            <div class="toggles-container">
+                <!-- <button > -->
+                    <img src="assets/giyu.png" onclick="ToglleSlider(0)" alt="giyu" srcset="">
+                <!-- </button> -->
+                <!-- <button > -->
+                    <img src="assets/harvest.png" onclick="ToglleSlider(1)" alt="harvest" srcset="">
+                <!-- </button> -->
+                <!-- <button > -->
+                    <img src="assets/sasuke.png" onclick="ToglleSlider(2)" alt="sasuke" srcset="">
+                <!-- </button> -->
+            </div>
+    <script>
+        function ToglleSlider(numb){
+            const weejios=[
+                '../../src/assets/anime.mp4',
+                '../../tailwind/assets/desa.mp4',
+                '../../tailwind/assets/dragon.mp4',
+            ]
+            document.getElementById('weejio').src=weejios[numb]
+        }
+    </script>
+</body>
+</html>
