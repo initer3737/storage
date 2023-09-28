@@ -13,8 +13,8 @@ const IconDissAppear=(Icon)=>{
 const onActiveClick=()=>new Audio('vanila/porto/sound/clickselek.mp3').play();
 
 document.addEventListener('mousemove',(e)=>{
-    let bg=document.getElementById('weejio-begeh')
-        bg.style.height=100+e.pageY/20+'vh'
-        bg.style.width=100+e.pageX/40+'vw'
-        bg.style.transform=`scaleY(${1+e.pageY/1202}) scaleX(${1+e.pageX/1502})`
+    // let bg=document.getElementById('weejio-begeh')
+    //     bg.style.height=100+e.pageY/20+'vh'
+    //     bg.style.width=100+e.pageX/40+'vw'
+    //     bg.style.transform=`scaleY(${1+e.pageY/1202}) scaleX(${1+e.pageX/1502})`
 })

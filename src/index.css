@@ -159,8 +159,9 @@ body{
 
 .weejio-bg{
     position: absolute;
+    inset: 0;
     width: 100vw;
-    height: 200vh;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
     transition: ease-out .7s;
