@@ -4,8 +4,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
     /* overflow-y: hidden; */
-    cursor: url(https://cur.cursors-4u.net/anime/ani-11/ani1035.ani), url(https://cur.cursors-4u.net/anime/ani-11/ani1035.png), auto !important;
-}
+   }
 :root{
     --info-color:#0dcaf0;
     --silver:red;
@@ -23,10 +22,6 @@ nav a,nav .nav-link:focus{
 nav,nav ul .dropdown-menu{
     background-color: black;
 }
-body{
-    /* max-height: 200vh;
-    min-height: 200vh; */
-}
 nav video{
     position: relative;
     height:fit-content;
@@ -41,14 +36,23 @@ nav video{
 
 }
 .card-red{
+    cursor:pointer;
     width:fit-content;
     height: fit-content;
     background: rgba(255,0,0, .7);
-    box-shadow: 12px 12px 11px 10px rgba(182, 13, 13, 0.6);
+    box-shadow: 5px 3px 2px 2px rgba(182, 13, 13, 0.6);
+    animation: 3s alternate infinite card_red_animatsi;
 }
-.itachi-text{
-   
+
+@keyframes card_red_animatsi {
+    from{
+        box-shadow: 5px 5px 4px 2px rgba(182, 13, 13, 0.6);
+    }
+    to{
+        box-shadow: 5px 5px 4px 2px white;
+    }
 }
+
 .itachi-container{
     display: flex;
     gap: 3vw;
