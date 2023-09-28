@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(black 50%,blue) no-repeat;
+    background: linear-gradient(green 50%, silver) no-repeat;
     min-height: 100vh;
     display: flex;
     justify-content: center;

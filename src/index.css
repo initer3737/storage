@@ -1,7 +1,6 @@
 *{
     /* overflow-y: hidden; */
     height: fit-content;
-    cursor: url(https://cur.cursors-4u.net/nature/nat-2/nat108.cur), auto !important;
 }
 .card{
     z-index: 1;

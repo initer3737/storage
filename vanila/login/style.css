@@ -29,9 +29,23 @@ video{
     border-radius: 8px;
     padding: 10px 5px;
     background-color: var(--abu-tua);
-    box-shadow:8px 10px var(--shadow);
+    box-shadow:8px 10px 15px 12px var(--shadow);
     color: white;
     gap: 3px;
+    border-width: 3px;
+    border-color: white;
+    animation: alternate-reverse 5s form_login_animatsi infinite;
+}
+
+@keyframes form_login_animatsi {
+    from{
+        border-color: white;
+        box-shadow:8px 10px 15px 12px var(--shadow);
+    }
+    to{
+        border-color: var(--shadow);
+        box-shadow:8px 10px 7.5px 6px white;
+    }
 }
 
 .form-login label{

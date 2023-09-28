@@ -6,8 +6,12 @@
 }
 
 video{
-    min-width: 100vw;
-    min-height: 100vh;
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
 
 .wrapper-card{
@@ -22,11 +26,21 @@ video{
     max-width: 320px;
     padding: 3vh 2vw;
     border-radius: 2vw;
-    box-shadow:4px 6px var(--bg-1);
+    box-shadow:4px 6px 6px 3px var(--bg-1);
     background-color:var(--bg-2) ;
     color: #9aecfd;
     display: flex;
     flex-flow: nowrap column;
+    animation: infinite 4s alternate-reverse login_form_animatsi ;
+}
+
+@keyframes login_form_animatsi {
+    from{
+        box-shadow:4px 6px 6px 3px var(--bg-1);
+    }
+    to{
+        box-shadow:4px 6px 6px 1.5px white;
+    }
 }
 
 .card a{

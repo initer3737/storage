@@ -11,6 +11,23 @@
 .title-flex{
     display: flex;
     align-items: center;
+    gap:9px;
+}
+.title-flex img{
+    border-radius: 50px;
+    border-width: 4px;
+    border-color: rgb(248, 30, 255);
+    border-style: solid;
+    box-shadow: 12px 12px 12px indigo;
+    animation: title_flex_animatsi alternate-reverse 3s infinite;
+}
+@keyframes title_flex_animatsi {
+    from{
+        box-shadow: 12px 12px 12px indigo;
+    }
+    to{
+        box-shadow: 12px 12px 12px white;
+    }
 }
 header{
     color: #eaeaea;
@@ -155,6 +172,7 @@ a{
 .tentang{
     position: relative;
     display: flex;
+    gap: 8px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
